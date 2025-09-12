@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "gerald-challenge",
+    "slug": "gerald-challenge",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./shared/assets/images/icon.png",
+    "scheme": "geraldchallenge",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.iputbuttons.geraldchallenge"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./shared/assets/images/android-icon-foreground.png",
+        "backgroundImage": "./shared/assets/images/android-icon-background.png",
+        "monochromeImage": "./shared/assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.iputbuttons.geraldchallenge"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./shared/assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
