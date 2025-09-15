@@ -1,3 +1,4 @@
+import { DrawerHeader } from '@/shared/components/drawer'
 import { useTheme } from '@/shared/hooks/useTheme'
 import Ionicons from '@expo/vector-icons/Ionicons'
 import { Tabs } from 'expo-router'
@@ -16,11 +17,15 @@ export default function TabLayout() {
           fontFamily: 'Satoshi-Bold',
           fontSize: 18
         },
+        header: DrawerHeader,
         tabBarActiveTintColor: colors.red[400],
         tabBarInactiveTintColor: colors.gray[400],
         tabBarLabelStyle: {
-          fontFamily: 'Satoshi-Bold',
+          fontFamily: 'Satoshi-Medium',
           fontSize: 14
+        },
+        tabBarStyle: {
+          borderTopColor: colors.gray[300]
         }
       }}
     >
