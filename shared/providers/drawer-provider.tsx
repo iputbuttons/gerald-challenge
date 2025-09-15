@@ -39,7 +39,7 @@ export const DrawerProvider = ({ children }: PropsWithChildren) => {
     if (isOpen) {
       closeDrawer()
     } else {
-      openDrawer(
+      openDrawer()
     }
   }, [isOpen, openDrawer, closeDrawer])
 
