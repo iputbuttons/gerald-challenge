@@ -1,4 +1,5 @@
 import { PropsWithChildren } from 'react'
+import { DrawerProvider } from './drawer-provider'
 import { FontProvider } from './fonts-provider'
 import { KeyboardAvoidingProvider } from './keyboard-avoid-provider'
 import { SafeAreaProvider } from './safe-area-provider'
@@ -9,7 +10,9 @@ export function Providers({ children }: PropsWithChildren) {
     <FontProvider>
       <ThemeProvider>
         <KeyboardAvoidingProvider>
-          <SafeAreaProvider>{children}</SafeAreaProvider>
+          <SafeAreaProvider>
+            <DrawerProvider>{children}</DrawerProvider>
+          </SafeAreaProvider>
         </KeyboardAvoidingProvider>
       </ThemeProvider>
     </FontProvider>
