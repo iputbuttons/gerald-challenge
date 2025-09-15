@@ -1,8 +1,8 @@
-## Gerald Challenge — Custom Drawer with Expo Router + Reanimated
+# Gerald Challenge — Custom Drawer with Expo Router + Reanimated
 
 <video src="./demo.mp4" controls muted playsinline width="420" />
 
-### Overview
+## Overview
 
 This project implements a custom Drawer that acts as the parent container of the main navigation, built with `react-native-reanimated` and integrated with `expo-router`. It follows the requested pattern:
 
@@ -19,7 +19,7 @@ The Drawer is custom-built (not using `@react-navigation/drawer`) with complex a
 
 ---
 
-### Run locally
+## Run locally
 
 - Requirements: Node 18+, Xcode (iOS) or Android Studio (Android), and the `expo` CLI.
 - Install dependencies:
@@ -46,7 +46,7 @@ If you see a message about the Reanimated Babel plugin, check Troubleshooting be
 
 ---
 
-### Navigation structure (expo-router)
+## Navigation structure (expo-router)
 
 - `app/_layout.tsx`: Root `Stack` with two routes: `orders` and `store`.
   - `orders`: standalone screen with `DrawerHeader`.
@@ -59,7 +59,7 @@ Initial redirect: `app/index.tsx` → `/store/home`.
 
 ---
 
-### Drawer architecture (core)
+## Drawer architecture (core)
 
 - `shared/providers/drawer-provider.tsx`
   - Exposes `DrawerContext` with:
@@ -86,7 +86,7 @@ Initial redirect: `app/index.tsx` → `/store/home`.
 
 ---
 
-### Extending the Drawer
+## Extending the Drawer
 
 - Add a new menu item:
   - Update `links` array in `shared/components/drawer.tsx` inside `DrawerMenu`.
@@ -108,7 +108,7 @@ const links = [
 
 ---
 
-### Technical decisions
+## Technical decisions
 
 - **Reanimated**: used to deliver a smooth, fine-grained animated Drawer (as suggested in the challenge).
 - **expo-router**: organizes Drawer (parent) → Tabs → Stack through file-based routing and `Layout`s.
@@ -117,7 +117,7 @@ const links = [
 
 ---
 
-### Relevant files
+## Relevant files
 
 - `shared/providers/providers.tsx`: orchestrates `Theme`, `SafeArea`, `KeyboardAvoiding`, `Font`, and `DrawerProvider`.
 - `shared/providers/drawer-provider.tsx`: Drawer state and animation control.
