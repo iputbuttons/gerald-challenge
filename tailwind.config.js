@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'satoshi-bold': ['Satoshi-Bold'],
+        'satoshi-medium': ['Satoshi-Medium'],
         'satoshi-regular': ['Satoshi-Regular']
       }
     }
