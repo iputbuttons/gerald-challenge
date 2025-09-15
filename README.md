@@ -2,7 +2,7 @@
 
 Custom Drawer with Expo Router + Reanimated
 
-[![Demo (GIF)](./demo.gif)](./demo.mp4)
+<a href="./demo.mp4"><img src="./demo.gif" alt="Demo (GIF)" height="420" /></a>
 
 [Watch the full demo video (MP4)](./demo.mp4)
 
