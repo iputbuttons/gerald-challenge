@@ -1,7 +1,8 @@
-# Gerald Challenge — Custom Drawer with Expo Router + Reanimated
+# Gerald Challenge
 
-<video src="./demo.mp4" controls muted playsinline width="420">
-</video>
+Custom Drawer with Expo Router + Reanimated
+
+[Watch the full demo video (MP4)](./demo.mp4)
 
 ## Overview
 
